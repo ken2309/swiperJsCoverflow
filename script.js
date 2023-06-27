@@ -1,5 +1,6 @@
 
 const swiper = new Swiper('#wheel-slider', {
+  spaceBetween: '10%',
   effect: 'coverflow', // Kind of slider effect
   centeredSlides: true, // Force centered slide
   slidesPerView: 5, // auto = the slide itself defined the viewport of the slider
@@ -16,6 +17,6 @@ const swiper = new Swiper('#wheel-slider', {
     stretch: 0,
     depth: 150,
     modifier: 1,
-    slideShadows: true,
+    slideShadows: false,
   },
 }) 

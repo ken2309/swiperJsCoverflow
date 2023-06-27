@@ -38,11 +38,11 @@
 
 /* Transform the active slide */
 #wheel-slider .swiper-slide.swiper-slide-active {
-  transform: rotate(0deg) translateY(-100px) scale(1) !important;
-  -webkit-transform: rotate(0deg) translateY(-100px) scale(1) !important;
-  -moz-transform: rotate(0deg) translateY(-100px) scale(1) !important;
-  -ms-transform: rotate(0deg) translateY(-100px) scale(1) !important;
-  -o-transform: rotate(0deg) translateY(-100px) scale(1) !important;
+  transform: rotate(0deg) translateY(-100px)  !important;
+  -webkit-transform: rotate(0deg) translateY(-100px)  !important;
+  -moz-transform: rotate(0deg) translateY(-100px)  !important;
+  -ms-transform: rotate(0deg) translateY(-100px)  !important;
+  -o-transform: rotate(0deg) translateY(-100px)  !important;
 
 }
 
@@ -59,40 +59,50 @@
 
 /* Transform the first slides before */
 #wheel-slider .swiper-slide.swiper-slide-prev {
-  transform: rotate(10deg) translateY(-100px) scale(0.75) !important;
-  -webkit-transform: rotate(10deg) translateY(-100px) scale(0.75) !important;
-  -moz-transform: rotate(10deg) translateY(-100px) scale(0.75) !important;
-  -ms-transform: rotate(10deg) translateY(-100px) scale(0.75) !important;
-  -o-transform: rotate(10deg) translateY(-100px) scale(0.75) !important;
+  transform: rotate(10deg) translateY(-100px) !important;
+  -webkit-transform: rotate(10deg) translateY(-100px) !important;
+  -moz-transform: rotate(10deg) translateY(-100px) !important;
+  -ms-transform: rotate(10deg) translateY(-100px) !important;
+  -o-transform: rotate(10deg) translateY(-100px) !important;
 }
 
 /* Transform the first slide after */
 #wheel-slider .swiper-slide.swiper-slide-next {
-  transform: rotate(-10deg) translateY(-100px) scale(0.75) !important;
-  -webkit-transform: rotate(-10deg) translateY(-100px) scale(0.75) !important;
-  -moz-transform: rotate(-10deg) translateY(-100px) scale(0.75) !important;
-  -ms-transform: rotate(-10deg) translateY(-100px) scale(0.75) !important;
-  -o-transform: rotate(-10deg) translateY(-100px) scale(0.75) !important;
+  transform: rotate(-10deg) translateY(-100px) !important;
+  -webkit-transform: rotate(-10deg) translateY(-100px) !important;
+  -moz-transform: rotate(-10deg) translateY(-100px) !important;
+  -ms-transform: rotate(-10deg) translateY(-100px) !important;
+  -o-transform: rotate(-10deg) translateY(-100px) !important;
 }
 
 /* Transform all slides after */
 #wheel-slider .swiper-slide.swiper-slide-next+.swiper-slide {
-  transform: rotate(-20deg) translateY(-150px) scale(0.75) !important;
-  -webkit-transform: rotate(-20deg) translateY(-150px) scale(0.75) !important;
-  -moz-transform: rotate(-20deg) translateY(-150px) scale(0.75) !important;
-  -ms-transform: rotate(-20deg) translateY(-150px) scale(0.75) !important;
-  -o-transform: rotate(-20deg) translateY(-150px) scale(0.75) !important;
+  transform: rotate(-20deg) translateY(-150px) !important;
+  -webkit-transform: rotate(-20deg) translateY(-150px) !important;
+  -moz-transform: rotate(-20deg) translateY(-150px) !important;
+  -ms-transform: rotate(-20deg) translateY(-150px) !important;
+  -o-transform: rotate(-20deg) translateY(-150px) !important;
 }
 
 /* Transform all slides before */
 #wheel-slider .swiper-slide {
-  transform: rotate(20deg) translateY(-150px) scale(0.75) !important;
-  -webkit-transform: rotate(20deg) translateY(-150px) scale(0.75) !important;
-  -moz-transform: rotate(20deg) translateY(-150px) scale(0.75) !important;
-  -ms-transform: rotate(20deg) translateY(-150px) scale(0.75) !important;
-  -o-transform: rotate(20deg) translateY(-150px) scale(0.75) !important;
+  transform: rotate(20deg) translateY(-150px) !important;
+  -webkit-transform: rotate(20deg) translateY(-150px) !important;
+  -moz-transform: rotate(20deg) translateY(-150px) !important;
+  -ms-transform: rotate(20deg) translateY(-150px) !important;
+  -o-transform: rotate(20deg) translateY(-150px) !important;
 }
 
+#wheel-slider .swiper-slide.swiper-slide-prev>img,
+#wheel-slider .swiper-slide.swiper-slide-next>img,
+#wheel-slider .swiper-slide.swiper-slide-next+.swiper-slide>img,
+#wheel-slider .swiper-slide>img{
+  transform: scale(1);
+}
+#wheel-slider .swiper-slide.swiper-slide-active>img{
+  transform: scale(1.9);
+  transition-delay: 0.26s;
+}
 .clone-the-child-of-this{
   height: 100%;
 }
