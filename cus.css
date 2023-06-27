@@ -1,0 +1,98 @@
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  pointer-events: none;
+}
+
+/* basic properties for the slider */
+.swiper-wrapper {
+  transform-style: preserve-3d;
+  transition-property: transform;
+  box-sizing: content-box;
+  visibility: hidden;
+}
+
+.swiper-slide-visible{
+  visibility: visible;
+}
+/* Fade text down if slide is not active */
+#wheel-slider .swiper-slide .slide-heading,
+#wheel-slider .swiper-slide .slide-category {
+  transform: translateY(140%);
+  -webkit-transform: translateY(140%);
+  -moz-transform: translateY(140%);
+  -ms-transform: translateY(140%);
+  -o-transform: translateY(140%);
+  opacity: 0;
+}
+
+/* Fade category text up and down with a delay */
+#wheel-slider .swiper-slide .slide-category {
+  transition-delay: 0.3s;
+}
+
+/* Fade heading text up and down with a delay */
+#wheel-slider .swiper-slide .slide-heading {
+  transition-delay: 0.8s;
+}
+
+/* Transform the active slide */
+#wheel-slider .swiper-slide.swiper-slide-active {
+  transform: rotate(0deg) translateY(-100px) scale(1) !important;
+  -webkit-transform: rotate(0deg) translateY(-100px) scale(1) !important;
+  -moz-transform: rotate(0deg) translateY(-100px) scale(1) !important;
+  -ms-transform: rotate(0deg) translateY(-100px) scale(1) !important;
+  -o-transform: rotate(0deg) translateY(-100px) scale(1) !important;
+
+}
+
+/* Fade text up if slide is active */
+#wheel-slider .swiper-slide.swiper-slide-active .slide-heading,
+#wheel-slider .swiper-slide.swiper-slide-active .slide-category {
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  opacity: 1.0;
+}
+
+/* Transform the first slides before */
+#wheel-slider .swiper-slide.swiper-slide-prev {
+  transform: rotate(10deg) translateY(-100px) scale(0.75) !important;
+  -webkit-transform: rotate(10deg) translateY(-100px) scale(0.75) !important;
+  -moz-transform: rotate(10deg) translateY(-100px) scale(0.75) !important;
+  -ms-transform: rotate(10deg) translateY(-100px) scale(0.75) !important;
+  -o-transform: rotate(10deg) translateY(-100px) scale(0.75) !important;
+}
+
+/* Transform the first slide after */
+#wheel-slider .swiper-slide.swiper-slide-next {
+  transform: rotate(-10deg) translateY(-100px) scale(0.75) !important;
+  -webkit-transform: rotate(-10deg) translateY(-100px) scale(0.75) !important;
+  -moz-transform: rotate(-10deg) translateY(-100px) scale(0.75) !important;
+  -ms-transform: rotate(-10deg) translateY(-100px) scale(0.75) !important;
+  -o-transform: rotate(-10deg) translateY(-100px) scale(0.75) !important;
+}
+
+/* Transform all slides after */
+#wheel-slider .swiper-slide.swiper-slide-next+.swiper-slide {
+  transform: rotate(-20deg) translateY(-150px) scale(0.75) !important;
+  -webkit-transform: rotate(-20deg) translateY(-150px) scale(0.75) !important;
+  -moz-transform: rotate(-20deg) translateY(-150px) scale(0.75) !important;
+  -ms-transform: rotate(-20deg) translateY(-150px) scale(0.75) !important;
+  -o-transform: rotate(-20deg) translateY(-150px) scale(0.75) !important;
+}
+
+/* Transform all slides before */
+#wheel-slider .swiper-slide {
+  transform: rotate(20deg) translateY(-150px) scale(0.75) !important;
+  -webkit-transform: rotate(20deg) translateY(-150px) scale(0.75) !important;
+  -moz-transform: rotate(20deg) translateY(-150px) scale(0.75) !important;
+  -ms-transform: rotate(20deg) translateY(-150px) scale(0.75) !important;
+  -o-transform: rotate(20deg) translateY(-150px) scale(0.75) !important;
+}
+
+.clone-the-child-of-this{
+  height: 100%;
+}
