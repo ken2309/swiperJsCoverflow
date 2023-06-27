@@ -104,7 +104,7 @@ body {
 .curved__background {
     position: absolute;
     z-index: 0;
-    top: -40%;
+    top: -30%;
     bottom: 0;
     left: 50%;
     border-radius: 20px;
